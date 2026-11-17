@@ -1,0 +1,364 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#190d12">
+  <meta name="description" content="Just Perfect Designs — Professional graphic design, AI design, logo design and brand identity.">
+  <title>Just Perfect Designs | Creative Studio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f4ef;
+      color: #21171b;
+      line-height: 1.7;
+    }
+
+    :root {
+      --burgundy: #501c30;
+      --dark: #190d12;
+      --gold: #c5a36b;
+      --cream: #f8f4ef;
+    }
+
+    header {
+      background: var(--dark);
+      color: white;
+      padding: 18px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo {
+      color: var(--gold);
+      font-weight: bold;
+      font-size: 18px;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 13px;
+    }
+
+    nav a:hover { color: var(--gold); }
+
+    .hero {
+      min-height: 520px;
+      background: linear-gradient(120deg, #190d12, #501c30);
+      color: white;
+      padding: 110px 8%;
+      display: flex;
+      align-items: center;
+    }
+
+    .hero-content { max-width: 700px; }
+
+    .eyebrow {
+      color: var(--gold);
+      letter-spacing: 4px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: clamp(40px, 7vw, 72px);
+      line-height: 1.12;
+      margin: 22px 0;
+    }
+
+    h1 span { color: var(--gold); }
+
+    .hero p {
+      max-width: 570px;
+      color: #e5d9dd;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 13px 25px;
+      background: var(--gold);
+      color: var(--dark);
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 4px;
+      margin: 5px 8px 5px 0;
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 1px solid var(--gold);
+      color: white;
+    }
+
+    section { padding: 75px 8%; }
+
+    .section-heading {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .section-heading h2 {
+      color: var(--burgundy);
+      font-size: 32px;
+      margin-bottom: 8px;
+    }
+
+    .section-heading p { color: #74666c; }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 20px;
+    }
+
+    .service {
+      background: white;
+      padding: 28px;
+      border-bottom: 3px solid var(--gold);
+      border-radius: 5px;
+    }
+
+    .service h3 {
+      color: var(--burgundy);
+      margin-bottom: 10px;
+    }
+
+    .service p {
+      color: #74666c;
+      font-size: 14px;
+    }
+
+    .portfolio { background: #eee7e1; }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .project {
+      min-height: 220px;
+      background: linear-gradient(145deg, #501c30, #190d12);
+      border-radius: 6px;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      padding: 24px;
+      color: white;
+      border: 1px solid #c5a36b;
+    }
+
+    .project:nth-child(2n) {
+      background: linear-gradient(145deg, #b28d69, #501c30);
+    }
+
+    .project small {
+      color: #f1d6a6;
+      letter-spacing: 2px;
+    }
+
+    .project h3 { margin-top: 7px; }
+
+    .about {
+      background: white;
+      text-align: center;
+    }
+
+    .about-content {
+      max-width: 750px;
+      margin: auto;
+    }
+
+    .about p { color: #65575d; }
+
+    .contact {
+      background: var(--dark);
+      color: white;
+      text-align: center;
+    }
+
+    .contact h2 {
+      color: var(--gold);
+      font-size: 34px;
+      margin-bottom: 15px;
+    }
+
+    .contact p {
+      color: #e5d9dd;
+      margin-bottom: 25px;
+    }
+
+    footer {
+      background: #10080c;
+      color: #c9bfc3;
+      padding: 25px;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    @media(max-width: 650px) {
+      header {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      nav a { margin: 0 7px; }
+
+      .hero {
+        min-height: 460px;
+        padding: 80px 7%;
+      }
+
+      section { padding: 60px 7%; }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">JUST PERFECT DESIGNS</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="eyebrow">WELCOME TO OUR CREATIVE WORLD</div>
+      <h1>Creativity That Brings Your <span>Vision</span> to Life.</h1>
+      <p>
+        We transform ideas into extraordinary visuals.
+        Discover professional graphic design, AI-powered
+        creativity, logo design and brand identity solutions.
+      </p>
+      <a href="#portfolio" class="btn">Explore Our Work</a>
+      <a href="#contact" class="btn btn-outline">Work With Us</a>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="section-heading">
+      <h2>Our Creative Services</h2>
+      <p>Creative solutions designed to make your brand stand out.</p>
+    </div>
+
+    <div class="services">
+      <div class="service">
+        <h3>Graphic Design</h3>
+        <p>Professional flyers, posters, advertisements and social media designs.</p>
+      </div>
+
+      <div class="service">
+        <h3>AI Creative Design</h3>
+        <p>Unique AI-powered visuals, creative concepts and digital artwork.</p>
+      </div>
+
+      <div class="service">
+        <h3>Logo Design</h3>
+        <p>Memorable and professional logos that communicate your brand identity.</p>
+      </div>
+
+      <div class="service">
+        <h3>Brand Identity</h3>
+        <p>Creative branding solutions that give businesses a consistent visual identity.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="portfolio" id="portfolio">
+    <div class="section-heading">
+      <h2>Selected Creative Works</h2>
+      <p>A showcase of creativity, detail and visual excellence.</p>
+    </div>
+
+    <div class="projects">
+      <div class="project">
+        <small>01 / BRANDING</small>
+        <h3>Brand Identity</h3>
+      </div>
+
+      <div class="project">
+        <small>02 / GRAPHICS</small>
+        <h3>Flyer Designs</h3>
+      </div>
+
+      <div class="project">
+        <small>03 / AI ART</small>
+        <h3>AI Creations</h3>
+      </div>
+
+      <div class="project">
+        <small>04 / ADVERTISING</small>
+        <h3>Product Designs</h3>
+      </div>
+
+      <div class="project">
+        <small>05 / DIGITAL</small>
+        <h3>Social Media Designs</h3>
+      </div>
+
+      <div class="project">
+        <small>06 / CREATIVE</small>
+        <h3>Visual Concepts</h3>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="about-content">
+      <div class="section-heading">
+        <h2>About Just Perfect Designs</h2>
+      </div>
+      <p>
+        Just Perfect Designs is a creative design brand
+        passionate about turning ideas into captivating
+        visual experiences. We combine creativity,
+        innovation and precision to help individuals
+        and businesses communicate their stories
+        through exceptional design.
+      </p>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Let's Create Something Amazing</h2>
+    <p>Have a project in mind? We'd love to hear from you.</p>
+    <a class="btn"
+       href="https://wa.me/234XXXXXXXXXX"
+       target="_blank">
+       Contact Us on WhatsApp
+    </a>
+  </section>
+</main>
+
+<footer>
+  © 2026 Just Perfect Designs. All Rights Reserved.
+  <br>Creativity. Innovation. Excellence.
+</footer>
+
+</body>
+  </html>
+                            
